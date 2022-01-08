@@ -13,8 +13,8 @@ class Base:
 		self.ep_path = config.get("get_weather_info", "ep_path")
 		self.client=HttpClient()
 
-	def get_cityname(self,number):
-		url = self.host + self.ep_path + f'{number}.html'
+	def get_cityname(self,city_code):
+		url = self.host + self.ep_path + f'{city_code}.html'
 		response = self.client.get(url)
 		city = json.loads(response).get('weatherinfo').get('city')
 		return  city
