@@ -23,7 +23,7 @@ class TestWenther:
 		assert  city=='上海'
 
 	@allure.story('城市为深圳')
-	def test_shanghai(self):
+	def test_shenzhen(self):
 		# url = self.host+self.ep_path+'101020100.html'
 		# response = self.client.get(url)
 		# city = json.loads(response).get('weatherinfo').get('city')
@@ -31,7 +31,7 @@ class TestWenther:
 		assert  city=='深圳'
 
 	@allure.story('城市为广州')
-	def test_shanghai(self):
+	def test_guangzhou(self):
 		# url = self.host+self.ep_path+'101020100.html'
 		# response = self.client.get(url)
 		# city = json.loads(response).get('weatherinfo').get('city')
