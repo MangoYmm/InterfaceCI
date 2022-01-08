@@ -29,3 +29,11 @@ class TestWenther:
 		# city = json.loads(response).get('weatherinfo').get('city')
 		city = self.base.get_cityname('101280601')
 		assert  city=='深圳'
+
+	@allure.story('城市为广州')
+	def test_shanghai(self):
+		# url = self.host+self.ep_path+'101020100.html'
+		# response = self.client.get(url)
+		# city = json.loads(response).get('weatherinfo').get('city')
+		city = self.base.get_cityname('101280101')
+		assert  city=='广州'
