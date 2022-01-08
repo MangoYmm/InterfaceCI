@@ -1,9 +1,6 @@
-import json
-
 import allure
+from InterfaceCI.library.base import Base
 
-from RecordedVideoPrac.InterfaceCI.library.base import Base
-from RecordedVideoPrac.InterfaceCI.library.httpclient import HttpClient
 
 @allure.feature("weather api")
 class TestWenther:
